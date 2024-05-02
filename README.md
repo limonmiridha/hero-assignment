@@ -16,7 +16,7 @@ Now you will able to see it on your browser at [localhost](http://localhost:3000
 
 ## Architecture
 
-As it is NextJS project so I started it with recommended command `npx create-next-app@latest` and I use ** app router ** within ** src ** folder. I place my images on public/images folder. I have few folder inside src because of structured project efficiently. These are:-
+As it is NextJS project so I started it with recommended command `npx create-next-app@latest` and I use **app router** within **src** folder. I place my images on public/images folder. I have few folder inside src because of structured project efficiently. These are:-
 
 - api
 - app
@@ -56,4 +56,4 @@ I separated the complex ui here without gathering them app or component. All bar
 
 ## My mistake and other
 
-I can't do it perfectly I know. I am not expert in Antd and Zustand. But I have confidence to use package and learn quickly asap. Many Many bugs are here, perdon me. Actually I do a similar work on my previous company which is design in NextJS with TailwindCSS but not too much about state management. I am interested about it. I do it personally now. I don't think about salary now, I highly eager to join in Programming Hero. I will be too much pleased if I selected for furthur process because I need a job badly.
+I can't do it perfectly I know. I am not expert in Antd and Zustand. But I have confidence to use package and learn quickly asap. Many Many bugs are here, perdon me. Actually I do a similar work on my previous company which is design in NextJS with TailwindCSS but not too much about state management. So I have some weakness but I am interested about it. I practice it personally now. I don't think about salary now, I highly eager to join in Programming Hero. I will be too much pleased if I selected for furthur process because I need a job badly.
