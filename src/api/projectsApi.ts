@@ -73,8 +73,8 @@ export const fetchProjects = async () => {
         },
       ],
       team: [
-        { id: 5, name: 'Eve' },
-        { id: 6, name: 'Frank' },
+        { id: 5, name: 'Eve', role: 'Problem Solver' },
+        { id: 6, name: 'Frank', role: 'Frontend Developer' },
       ],
       activities: [
         { id: 5, description: 'Refactoring Done', date: '2023-03-01' },
@@ -90,12 +90,22 @@ export const fetchProjects = async () => {
       name: 'Data Diggers',
       service: 'Data Analysis',
       tasks: [
-        { id: 7, name: 'Analyze Market Trends', status: 'Completed' },
-        { id: 8, name: 'Prepare Report', status: 'In Progress' },
+        {
+          id: 7,
+          name: 'Analyze Market Trends',
+          status: 'Completed',
+          assignedMember: 'Grace',
+        },
+        {
+          id: 8,
+          name: 'Prepare Report',
+          status: 'In Progress',
+          assignedMember: 'Henry',
+        },
       ],
       team: [
-        { id: 7, name: 'Grace' },
-        { id: 8, name: 'Henry' },
+        { id: 7, name: 'Grace', role: 'Junior Analist' },
+        { id: 8, name: 'Henry', role: 'Database Manager' },
       ],
       activities: [
         { id: 7, description: 'Market Analysis Completed', date: '2023-04-01' },
@@ -111,12 +121,22 @@ export const fetchProjects = async () => {
       name: 'Creative Constructs',
       service: 'Architecture',
       tasks: [
-        { id: 9, name: 'Draft Initial Designs', status: 'Completed' },
-        { id: 10, name: 'Site Survey', status: 'In Progress' },
+        {
+          id: 9,
+          name: 'Draft Initial Designs',
+          status: 'Completed',
+          assignedMember: 'Jack',
+        },
+        {
+          id: 10,
+          name: 'Site Survey',
+          status: 'In Progress',
+          assignedMember: 'Ivy',
+        },
       ],
       team: [
-        { id: 9, name: 'Ivy' },
-        { id: 10, name: 'Jack' },
+        { id: 9, name: 'Ivy', role: 'Building Dev.' },
+        { id: 10, name: 'Jack', role: 'Road Developer' },
       ],
       activities: [
         { id: 9, description: 'Initial Designs Drafted', date: '2023-05-01' },

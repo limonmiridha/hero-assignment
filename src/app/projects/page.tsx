@@ -1,12 +1,5 @@
 import ProjectUi from '@/views/project';
-import React from 'react';
 
-const page = () => {
-  return (
-    <div>
-      <ProjectUi />
-    </div>
-  );
-};
+const page = () => <ProjectUi />;
 
 export default page;

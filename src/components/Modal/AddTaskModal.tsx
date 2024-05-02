@@ -1,4 +1,4 @@
-import { Modal, Form, Input, Select, Button } from 'antd';
+import { Modal, Form, Input, Select } from 'antd';
 import React, { useState } from 'react';
 
 const { Option } = Select;
@@ -64,12 +64,6 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({
             <Option value="Dana">Dana</Option>
           </Select>
         </Form.Item>
-        {/* <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Add Task
-          </Button>
-          <Button onClick={onClose}>Cancel</Button>
-        </Form.Item> */}
       </Form>
     </Modal>
   );

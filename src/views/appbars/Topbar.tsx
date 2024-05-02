@@ -1,21 +1,12 @@
-'use client';
-import { Button, Layout, Menu, theme } from 'antd';
-import { Content, Header } from 'antd/es/layout/layout';
-import React, { useState } from 'react';
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
+import { theme } from 'antd';
+import { Header } from 'antd/es/layout/layout';
+import React from 'react';
+
 import Link from 'next/link';
 import { IoIosLogIn } from 'react-icons/io';
 
-const Topbar = ({ collapsed, setCollapsed }: any) => {
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
+const Topbar = () => {
+  theme.useToken();
   return (
     // <Layout>
     <Header

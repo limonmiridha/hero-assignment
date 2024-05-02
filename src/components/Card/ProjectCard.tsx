@@ -8,15 +8,10 @@ import ProjectModal from '../Modal/ProjectModal';
 
 const ProjectCard = ({ project }: any) => {
   const [updatedProject, setUpdatedProject] = useState(project);
+
   const onUpdateProject = (updatedProject: any) => {
     setUpdatedProject(updatedProject);
     console.log('Updated Project:', updatedProject);
-  };
-  const onDeleteItem = (itemId: number) => {
-    const updatedItems = updatedProject.filter(
-      (item: any) => item.id !== itemId
-    );
-    setUpdatedProject(updatedItems);
   };
 
   return (
@@ -54,7 +49,6 @@ const ProjectCard = ({ project }: any) => {
               id: 3,
               icon: BiSolidDetail,
               title: 'Delete',
-              // onClick: () => onDeleteItem(project.id),
             },
           ]}
         />

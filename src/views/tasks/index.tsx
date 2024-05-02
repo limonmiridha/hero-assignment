@@ -3,11 +3,9 @@ import React from 'react';
 import { useDrag, useDrop, DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import useTaskStore from '../../store/useTaskStore';
-import ProjectModal from '@/components/Modal/ProjectModal';
 import { FaPlus } from 'react-icons/fa';
 import { Task } from '@/types/tasks';
 import TaskDetailModal from '@/components/Modal/TaskDetailModal';
-import { Modal } from 'antd';
 
 const TaskUi = () => {
   const { tasks, moveTask, addTask, editTask, completeTask } = useTaskStore();
@@ -20,10 +18,6 @@ const TaskUi = () => {
 
   const handleEditTask = (editedTask: Task) => {
     editTask(editedTask as any);
-  };
-
-  const handleCompleteTask = (taskId: string) => {
-    completeTask(taskId as any);
   };
 
   const openTaskDetails = (taskId: string) => {

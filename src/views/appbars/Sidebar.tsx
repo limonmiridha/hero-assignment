@@ -1,25 +1,14 @@
 'use client';
 import React, { useState } from 'react';
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
-import { Button, Layout, Menu, theme } from 'antd';
-import Topbar from './Topbar';
+import { UserOutlined } from '@ant-design/icons';
+import { Layout, Menu, theme } from 'antd';
 import Link from 'next/link';
 import { FaTasks } from 'react-icons/fa';
-import { AiOutlineAlert } from 'react-icons/ai';
 
-const { Header, Sider, Content } = Layout;
+const { Sider } = Layout;
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
 
   return (
     <div className="">
@@ -52,7 +41,6 @@ const Sidebar: React.FC = () => {
           ]}
         />
       </Sider>
-      {/* <Topbar collapsed={collapsed} setCollapsed={setCollapsed} /> */}
     </div>
   );
 };

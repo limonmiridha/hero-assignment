@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button, Modal, Select } from 'antd';
+import { Form, Input, Modal, Select } from 'antd';
 import { Task, TeamMember } from '../../types/tasks';
 
 interface TaskDetailModalProps {
